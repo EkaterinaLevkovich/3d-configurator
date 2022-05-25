@@ -1,0 +1,49 @@
+/* eslint-disable radix */
+/* eslint-disable default-param-last */
+import * as THREE from 'three';
+import { COLORS } from '../../constants/colors';
+import { TEXTURES } from '../../constants/textures';
+import { COLORING_BACKGROUND, COLORING_COLOR, COLORING_TEXTURE } from '../actions/coloring/coloring.actions-type';
+
+const coloring = {
+  activeOption: 'armrest',
+  newMTL: null,
+  colorBackground: 0xf1f1f1,
+};
+export const coloringReducer = (state = coloring, action) => {
+  const { type, payload } = action;
+
+  switch (type) {
+    case COLORING_TEXTURE: {
+      const texture = TEXTURES[payload.idx];
+      const txt = new THREE.TextureLoader().load(texture.texture);
+      txt.repeat.set(texture.size[0], texture.size[1], texture.size[2]);
+      txt.wrapS = THREE.RepeatWrapping;
+      txt.wrapT = THREE.RepeatWrapping;
+      return {
+        ...state,
+        activeOption: payload.activeOption,
+        newMTL: new THREE.MeshPhongMaterial({
+          map: txt,
+          shininess: texture.shininess ? texture.shininess : 10,
+        }),
+      };
+    }
+    case COLORING_COLOR: return {
+      ...state,
+      activeOption: payload.activeOption,
+      newMTL: new THREE.MeshPhongMaterial({
+        color: parseInt(`0x${COLORS[payload.idx].color}`),
+        shininess: COLORS[payload.idx].shininess ? COLORS[payload.idx].shininess : 10,
+      }),
+    };
+    case COLORING_BACKGROUND: {
+      const colorValue = parseInt(`0x${payload.slice(1)}`);
+      return {
+        ...state,
+        colorBackground: colorValue,
+      };
+    }
+    default: return state;
+  }
+};
