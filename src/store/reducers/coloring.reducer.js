@@ -3,7 +3,9 @@
 import * as THREE from 'three';
 import { COLORS } from '../../constants/colors';
 import { TEXTURES } from '../../constants/textures';
-import { COLORING_BACKGROUND, COLORING_COLOR, COLORING_TEXTURE } from '../actions/coloring/coloring.actions-type';
+import {
+  COLORING_BACKGROUND, COLORING_COLOR, COLORING_CUSTOM_COLOR, COLORING_TEXTURE,
+} from '../actions/coloring/coloring.actions-type';
 
 const coloring = {
   activeOption: 'armrest',
@@ -34,7 +36,15 @@ export const coloringReducer = (state = coloring, action) => {
       activeOption: payload.activeOption,
       newMTL: new THREE.MeshPhongMaterial({
         color: parseInt(`0x${COLORS[payload.idx].color}`),
-        shininess: COLORS[payload.idx].shininess ? COLORS[payload.idx].shininess : 10,
+        shininess: 10,
+      }),
+    };
+    case COLORING_CUSTOM_COLOR: return {
+      ...state,
+      activeOption: payload.activeOption,
+      newMTL: new THREE.MeshPhongMaterial({
+        color: parseInt(`0x${payload.colorInputEl.slice(1)}`),
+        shininess: 10,
       }),
     };
     case COLORING_BACKGROUND: {

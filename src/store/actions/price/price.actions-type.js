@@ -1,2 +1,3 @@
 export const TEXTURE_PRICE = 'TEXTURE_PRICE';
 export const COLOR_PRICE = 'COLOR_PRICE';
+export const CUSTOM_COLOR_PRICE = 'CUSTOM_COLOR_PRICE';

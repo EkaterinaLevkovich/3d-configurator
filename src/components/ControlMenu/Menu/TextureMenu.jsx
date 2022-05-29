@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 /* eslint-disable react/no-array-index-key */
 /* eslint-disable jsx-a11y/no-static-element-interactions */
 /* eslint-disable jsx-a11y/click-events-have-key-events */
@@ -18,7 +19,7 @@ export const TextureMenu = ({ activeOption }) => {
     <div className="textures">
       {TEXTURES.map((texture, idx) => (
         <div key={texture + idx}>
-          <div className="textures__item" style={{ background: `url(${texture.texture})` }} onClick={() => handleTexture(idx)} />
+          <div className="textures__item" style={{ background: `url(${texture.texture})` }} onClick={() => handleTexture(idx)} title={`${texture.price}$`} />
           <span>{texture.title}</span>
         </div>
       ))}

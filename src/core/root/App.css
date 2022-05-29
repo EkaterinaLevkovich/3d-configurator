@@ -122,54 +122,6 @@ html, #root {
   z-index: 1;
 }
 
-.controlMenu {
-  padding-left: 30px;
-  width: 60%;
-}
-
-.controlMenu > h2 {
-  margin: 0;
-}
-
-.textures {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-}
-
-.textures > div {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 50px;
-}
-
-.textures__item {
-  width: 40px;
-  height: 40px;
-}
-
-.colors {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-}
-
-.colors__item {
-  margin: 5px;
-  width: 35px;
-  height: 35px;
-  border-radius: 50%;
-}
-
-.optionsMenu > img {
-  margin-right: 5px;
-  width: 55px;
-  height: 55px;
-  border-radius: 4px;
-  border: 1px solid #9c9c9c;
-}
-
 .settingsMenu {
   display: flex;
   flex-direction: column;
@@ -201,3 +153,86 @@ html, #root {
   border: 1px solid #bbbbbb;
 }
 
+.controlMenu {
+  padding-left: 30px;
+  width: 60%;
+}
+
+.controlMenu > h2 {
+  margin: 0;
+}
+
+.optionsMenu > img {
+  margin-right: 5px;
+  width: 55px;
+  height: 55px;
+  border-radius: 10px;
+  border: 1px solid #9c9c9c;
+}
+
+.option--is-active {
+  box-shadow: 3px 3px 2px #9c9c9c;
+}
+
+.textures {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.textures > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 55px;
+}
+
+.textures__item {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+}
+
+.colors {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.colors__item {
+  margin: 5px;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+}
+
+.colors__custom {
+  margin-left: 5px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border-radius: 17px;
+  border: 1px solid #9c9c9c;
+}
+
+.colors__custom > p {
+  margin: 0 5px;
+}
+
+.colors__custom > input {
+  padding: 0;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  border: none;
+}
+
+.colors__custom > input::-webkit-color-swatch-wrapper {
+  padding: 0;
+}
+
+.colors__custom > input::-webkit-color-swatch {
+  border-radius: 50%;
+  border: none;
+}
