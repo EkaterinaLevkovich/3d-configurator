@@ -11,7 +11,7 @@ import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader';
 import model from '../../assets/models/Sofa.glb';
 
 const INITIAL_MTL = new THREE.MeshPhongMaterial({
-  color: new THREE.Color(0xdab9b9),
+  color: new THREE.Color(0xcda7a7),
   shininess: 10,
 });
 

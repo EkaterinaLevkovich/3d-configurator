@@ -9,7 +9,13 @@ import {
 
 const coloring = {
   activeOption: 'armrest',
-  newMTL: null,
+  newMTL: '#cda7a7',
+  armrest: '#cda7a7',
+  back: '#cda7a7',
+  backCushion: '#cda7a7',
+  base: '#cda7a7',
+  legs: '#cda7a7',
+  seatCushion: '#cda7a7',
   colorBackground: 0xf1f1f1,
 };
 export const coloringReducer = (state = coloring, action) => {
@@ -29,6 +35,7 @@ export const coloringReducer = (state = coloring, action) => {
           map: txt,
           shininess: texture.shininess ? texture.shininess : 10,
         }),
+        [payload.activeOption]: texture.title,
       };
     }
     case COLORING_COLOR: return {
@@ -38,6 +45,7 @@ export const coloringReducer = (state = coloring, action) => {
         color: parseInt(`0x${COLORS[payload.idx].color}`),
         shininess: 10,
       }),
+      [payload.activeOption]: `#${COLORS[payload.idx].color}`,
     };
     case COLORING_CUSTOM_COLOR: return {
       ...state,
@@ -46,6 +54,7 @@ export const coloringReducer = (state = coloring, action) => {
         color: parseInt(`0x${payload.colorInputEl.slice(1)}`),
         shininess: 10,
       }),
+      [payload.activeOption]: payload.colorInputEl,
     };
     case COLORING_BACKGROUND: {
       const colorValue = parseInt(`0x${payload.slice(1)}`);

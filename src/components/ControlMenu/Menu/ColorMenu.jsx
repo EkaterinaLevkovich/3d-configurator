@@ -25,7 +25,7 @@ export const ColorMenu = ({ activeOption }) => {
       ))}
       <div className="colors__custom">
         <p>CUSTOM COLOR</p>
-        <input type="color" onChange={getCustomColor} defaultValue="#dab9b9" title="7$" />
+        <input type="color" onChange={getCustomColor} defaultValue="#cda7a7" title="7$" />
       </div>
     </div>
   );

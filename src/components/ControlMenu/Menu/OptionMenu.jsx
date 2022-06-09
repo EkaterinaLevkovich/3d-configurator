@@ -6,9 +6,9 @@ import { OPTIONS } from '../../../constants/options';
 
 export const OptionMenu = ({ activeOption, setActiveOption }) => {
   return (
-    <div className="optionsMenu">
+    <div className="optionMenu">
       {OPTIONS.map(({ name, img }) => (
-        <img src={img} alt={name} className={`option${activeOption === name ? '--is-active' : ''}`} data-option={name} onClick={() => setActiveOption(name)} key={name} />
+        <img src={img} alt={name} className={`optionMenu__option${activeOption === name ? '--is-active' : ''}`} data-option={name} onClick={() => setActiveOption(name)} key={name} />
       ))}
     </div>
   );
