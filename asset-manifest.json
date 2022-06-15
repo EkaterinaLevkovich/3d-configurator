@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/3d-configurator/static/css/main.63ad0d05.css",
-    "main.js": "/3d-configurator/static/js/main.0c2c4706.js",
+    "main.css": "/3d-configurator/static/css/main.fa553e14.css",
+    "main.js": "/3d-configurator/static/js/main.4fb35fbe.js",
     "static/js/787.d61c6c0e.chunk.js": "/3d-configurator/static/js/787.d61c6c0e.chunk.js",
     "static/media/gunny.jpg": "/3d-configurator/static/media/gunny.94c0183e99b04f41b377.jpg",
     "static/media/wood.jpg": "/3d-configurator/static/media/wood.683633e54cbe2b737aea.jpg",
@@ -20,12 +20,12 @@
     "static/media/back.svg": "/3d-configurator/static/media/back.bd4f51821c09b849a0b844c50757eb04.svg",
     "index.html": "/3d-configurator/index.html",
     "static/media/getFetch.cjs": "/3d-configurator/static/media/getFetch.c780682470504fffbd04.cjs",
-    "main.63ad0d05.css.map": "/3d-configurator/static/css/main.63ad0d05.css.map",
-    "main.0c2c4706.js.map": "/3d-configurator/static/js/main.0c2c4706.js.map",
+    "main.fa553e14.css.map": "/3d-configurator/static/css/main.fa553e14.css.map",
+    "main.4fb35fbe.js.map": "/3d-configurator/static/js/main.4fb35fbe.js.map",
     "787.d61c6c0e.chunk.js.map": "/3d-configurator/static/js/787.d61c6c0e.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.63ad0d05.css",
-    "static/js/main.0c2c4706.js"
+    "static/css/main.fa553e14.css",
+    "static/js/main.4fb35fbe.js"
   ]
 }
