@@ -13,7 +13,7 @@ export const Header = () => {
       <img src={logo} alt="logo" />
       <div className="header__button">
         <p>{`Total: ${priceFormat}`}</p>
-        <Link to="/react-gh-pages/order">
+        <Link to="/3d-configurator/order/">
           <button type="button">Add order</button>
         </Link>
       </div>

@@ -26,7 +26,7 @@ export const SettingsMenu = () => {
     <div className="settingsMenu">
       <input type="color" onChange={getColorBackground} defaultValue="#f1f1f1" />
       <button type="button" ref={buttonRef} onClick={handleClickInside}>i</button>
-      <div className="settingsMenu__infoCard" style={{ display: clickedOutside ? 'none' : 'inline' }}>
+      <div className={`settingsMenu__infoCard${clickedOutside ? '--is-inactive' : ''}`}>
         <p>Length: 201 cm</p>
         <p>Height: 84 cm</p>
         <p>Depth: 76 cm</p>

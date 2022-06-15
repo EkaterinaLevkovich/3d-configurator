@@ -24,7 +24,7 @@ export const priceReducer = (state = price, action) => {
     }
     case COLOR_PRICE: return {
       ...state,
-      [payload]: 5,
+      [payload]: 5, // при выборе activeOption и цены, соответствующие свойства и значения меняются в объекте price
     };
     case CUSTOM_COLOR_PRICE: return {
       ...state,

@@ -5,7 +5,7 @@ import logo from '../../assets/image/Logo.svg';
 export const HeaderOrder = () => {
   return (
     <div className="header__order">
-      <Link to="/react-gh-pages">
+      <Link to="/3d-configurator/">
         <img src={logo} alt="logo" />
       </Link>
     </div>

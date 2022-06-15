@@ -1,0 +1,16 @@
+{
+  "menu": {
+    "title": {
+      "part1": "Выберите",
+      "part2": "отделку"
+    }
+  },
+  "textures": {
+    "textures1": "рисунок",
+    "textures2": "дерево",
+    "textures3": "рогожка",
+    "textures4": "велюр",
+    "textures5": "кожа",
+    "textures6": "джинс"
+  }
+}

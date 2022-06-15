@@ -16,7 +16,7 @@ export const Scene = ({ coloring }) => {
   } = useThree();
 
   useEffect(() => {
-    const directionalLight = scene.children[1];
+    const [, directionalLight] = scene.children;
     scene.background = new THREE.Color(coloring.colorBackground);
     camera.fov = 50;
     directionalLight.shadow.mapSize = new THREE.Vector2(1024, 1024);

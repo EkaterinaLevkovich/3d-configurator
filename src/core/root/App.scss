@@ -119,8 +119,6 @@ html, #root {
   }
 }
 
-
-
 .main {
   margin: 0;
   padding: 20px;
@@ -186,6 +184,9 @@ html, #root {
     border-radius: 4px;
     > p {
       margin: 0;
+    }
+    &--is-inactive {
+      display: none;
     }
   }
 }
@@ -416,8 +417,18 @@ svg {
     min-height: 140px;
   }
 
+  .header__button {
+    flex-wrap: wrap;
+    justify-content: flex-end;
+  }
+
   .settingsMenu {
     top: 140px;
+    &__infoCard {
+      top: 0;
+      height: 110px;
+      clip-path: polygon(6% 0, 100% 0%, 100% 100%, 6% 100%, 6% 60%, 0 55%, 6% 50%);
+    }
   }
 
   .controlMenu {
@@ -438,7 +449,6 @@ svg {
     &__info {
       padding: 20px 40px;
       width: 100%;
-
     }
   }
 }

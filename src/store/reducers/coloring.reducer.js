@@ -45,7 +45,7 @@ export const coloringReducer = (state = coloring, action) => {
         color: parseInt(`0x${COLORS[payload.idx].color}`),
         shininess: 10,
       }),
-      [payload.activeOption]: `#${COLORS[payload.idx].color}`,
+      [payload.activeOption]: `#${COLORS[payload.idx].color}`, // при выборе activeOption и цвета, соответствующие свойства и значения меняются в объекте coloring
     };
     case COLORING_CUSTOM_COLOR: return {
       ...state,

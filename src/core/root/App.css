@@ -197,6 +197,9 @@ html, #root {
 .settingsMenu__infoCard > p {
   margin: 0;
 }
+.settingsMenu__infoCard--is-inactive {
+  display: none;
+}
 
 .controlMenu {
   width: 60%;
@@ -418,8 +421,19 @@ svg:hover > path {
     min-height: 140px;
   }
 
+  .header__button {
+    flex-wrap: wrap;
+    justify-content: flex-end;
+  }
+
   .settingsMenu {
     top: 140px;
+  }
+  .settingsMenu__infoCard {
+    top: 0;
+    height: 110px;
+    -webkit-clip-path: polygon(6% 0, 100% 0%, 100% 100%, 6% 100%, 6% 60%, 0 55%, 6% 50%);
+            clip-path: polygon(6% 0, 100% 0%, 100% 100%, 6% 100%, 6% 60%, 0 55%, 6% 50%);
   }
 
   .controlMenu {
