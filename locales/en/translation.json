@@ -1,0 +1,16 @@
+{
+  "menu": {
+    "title": {
+      "part1": "Choose",
+      "part2": "finishing"
+    }
+  },
+  "textures": {
+    "textures1": "pattern",
+    "textures2": "wood",
+    "textures3": "gunny",
+    "textures4": "velour",
+    "textures5": "leather",
+    "textures6": "jeans"
+  }
+}
