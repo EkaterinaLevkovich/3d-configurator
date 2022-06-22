@@ -428,6 +428,7 @@ svg:hover > path {
 
   .settingsMenu {
     top: 140px;
+    height: 80px;
   }
   .settingsMenu__infoCard {
     top: 0;

@@ -34,7 +34,7 @@ export const Info = () => {
         ? <Form hideForm={hideForm} />
         : <p className="message">Thank you. We have received your order. The manager will contact you shortly</p>}
       <div className="order__info__button">
-        <Link to="/react-gh-pages">
+        <Link to="/3d-configurator/">
           <button type="button">back</button>
         </Link>
       </div>
